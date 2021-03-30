@@ -8,7 +8,7 @@ const TableHeader = () => {
                 <th>Last name</th>
             </tr>
         </thead>
-    )
+    );
 }
 const TableBody = (props) => {
     const rows = props.characterData.map((row, index) => {
@@ -24,13 +24,13 @@ const TableBody = (props) => {
 
 class Table extends Component {
     render() {
-        const {characterData} = this.props; 
+        const { characterData } = this.props; 
         return ( 
             <table>
                 <TableHeader />
-                <TableBody characterData={characterData}/>
+                <TableBody characterData={characterData} />
             </table>
-         );
+         )
     }
 }
  
